@@ -10,6 +10,8 @@ services:
       - 9000
     volumes:
       - ${WORKSPACE_DIR}:/var/www/
+    ports:
+      - "6001:6001"
     links:
       - db
 
